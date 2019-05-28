@@ -18,11 +18,11 @@ def ask_and_return_prefix():
 
 
 def start():
-    constant = {}
-    constant['searchTerm'] = input('Type a Wikipedia search term: ')
-    constant['prefix'] = ask_and_return_prefix()
+    content = {}
+    content['search_term'] = input('Type a Wikipedia search term: ')
+    content['prefix'] = ask_and_return_prefix()
 
-    print(constant)
+    print(content)
 
 
 if __name__ == '__main__':
