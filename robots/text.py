@@ -1,6 +1,7 @@
 import Algorithmia
 from nltk.tokenize import sent_tokenize
 import re
+from credentials import ALGORITHMIA
 import pprint
 
 
@@ -8,7 +9,7 @@ class Robot():
 
     def fetch_content_from_wikipedia(self, content):
         # Authenticate with your API key
-        _api_key = "sim7SA99NLbzLv4Nv8slHUmJj4V1"
+        _api_key = ALGORITHMIA['api_key']
 
         _input = {
             "articleName": content['search_term'],
@@ -42,9 +43,3 @@ class Robot():
             sentences_list.append(d)
 
         return sentences_list
-
-#def robot(content):
-#    fetch_content_from_wikipedia(content)
-#    sanitize_content(content)
-#    break_content_into_sentences(content)
-
