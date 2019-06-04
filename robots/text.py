@@ -43,9 +43,3 @@ class Robot():
             sentences_list.append(d)
 
         return sentences_list
-
-#def robot(content):
-#    fetch_content_from_wikipedia(content)
-#    sanitize_content(content)
-#    break_content_into_sentences(content)
-
